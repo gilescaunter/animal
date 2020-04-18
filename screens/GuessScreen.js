@@ -1,25 +1,26 @@
 import React from 'react';
 import {View, Text, Button, StyleSheet} from 'react-native';
 
-const StartScreen = props => {
+const GuessScreen = props => {
 
 
     return(
         <View style = {styles.screen}>
             <Text>
-                Think of an Animal!
+                Is it a: GUESSGOESHERE
             </Text>
-            <Button title = 'Go' onPress = {props.onGoHandler}/>
-            <Button title = 'Quit'/>
+            <Button title = 'Yes' />
+            <Button title = 'No'/>
         </View>
     );
 };
 
 const styles = StyleSheet.create({
     screen: {
+        padding:20,
         flex:1
     }
 });
 
-export default StartScreen;
+export default GuessScreen;
 

@@ -3,8 +3,20 @@ import { StyleSheet, Text, View } from 'react-native';
 import StartScreen from './screens/StartScreen';
 
 export default function App() {
+
+
+  
+
+
+  const onGoHandler = () => {
+    content = <Text>Pressed Go</Text>;
+    console.log('Pressed Go!');
+  };
+
+  let content = <StartScreen onGoHandler = {onGoHandler}/>;
+
   return (
-    <StartScreen></StartScreen>
+    content
   );
 }
 

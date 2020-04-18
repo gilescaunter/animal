@@ -1,16 +1,16 @@
 import React from 'react';
 import {View, Text, Button, StyleSheet} from 'react-native';
 
-const StartScreen = props => {
+const SuccessScreen = props => {
 
 
     return(
         <View style = {styles.screen}>
             <Text>
-                Think of an Animal!
+                Picture of Animal goes here
             </Text>
-            <Button title = 'Go' onPress = {props.onGoHandler}/>
-            <Button title = 'Quit'/>
+            <Button title = 'New' />
+            <Button title = 'Exit'/>
         </View>
     );
 };
@@ -21,5 +21,5 @@ const styles = StyleSheet.create({
     }
 });
 
-export default StartScreen;
+export default SuccessScreen;
 
